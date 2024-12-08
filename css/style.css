@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #ec041a;
+    --secondery-color: #000;
+    --Primary-Font: "Poppins", sans-serif;
+    --secondery-Font: "Open Sans", sans-serif;
+    --left-padding: 70px;
+}
+
+::selection {
+    background-color: #ec041a !important;
+}
+
+/* Styling Navbar */
+
+#Navbar {
+    height: 100px;
+    width: 100%;
+    background-color: var(--secondery-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 20px; */
+}
+
+.logo img {
+    width: 120px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* Hover Animation For Logo Image */
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.NavText {
+    position: relative;
+    right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+#NavText{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+#navText{
+    display: flex;
+    gap: 20px;
+}
+#navText li {
+    list-style: none;
+    padding: 0px 5px;
+}
+
+.NavText {
+    position: relative;
+}
+
+#navText a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--Primary-Font);
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+#navText a:hover {
+    color: var(--primary-color);
+}
+
+#navText a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease-in-out;
+}
+
+#navText a:hover::after {
+    width: 100%;
+}
+
+
+/* Styling Home Section */
+
+#Home {
+    min-height: 90vh;
+    width: 100%;
+    background: #000 url(/img/Song\ Poster\ \(2\).png) no-repeat center center /cover;
+    display: flex;
+    /* background-color: #000; */
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#Home h1 {
+    font-size: 65px;
+    font-style: italic;
+    font-family: var(--Primary-Font);
+    padding-top: var(--left-padding);
+    color: #fff;
+    padding-left: var(--left-padding);
+}
+
+#Home p {
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--secondery-Font);
+    width: 42%;
+    padding-left: var(--left-padding);
+    font-style: italic;
+
+}
+
+/* From Uiverse.io by zjssun */
+#Home-btn {
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    text-shadow: none;
+    background: #000;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid var(--primary-color);
+    transition: 0.5s ease;
+    user-select: none;
+    margin-left: var(--left-padding);
+}
+
+#Home-btn:hover,
+:focus {
+    color: #ffffff;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px var(--primary-color), 0 0 20px var(--primary-color), 0 0 50px var(--primary-color),
+        0 0 100px var(--primary-color);
+}
+
+/* Styling Beats for sales scetion */
+#BeatsForSales {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+#BeatsForSales h1 {
+    font-family: var(--Primary-Font);
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+}
+
+#BeatsForSales hr {
+    height: 5px;
+    margin-top: 5px !important;
+    width: 20%;
+    background: rgb(236, 20, 26);
+    border: none;
+    margin: auto;
+    display: block;
+}
+
+#BeatsForSales p {
+    font-size: 15px;
+    padding-top: 20px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    display: block;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.CardContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding-top: 50px;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid #fff; */
+    padding: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.Card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease;
+    /* cursor: pointer; */
+    padding: 20px 40px;
+
+}
+
+.Card img {
+    width: 250px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Card img:hover {
+    transform: scale(1.1);
+}
+
+.SepereteText {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.SepereteText a {
+    font-size: 16px;
+    color: #4174ff;
+    font-style: italic;
+    font-weight: 600;
+    font-family: var(--secondery-Font);
+    text-decoration: none;
+}
+
+.SepereteText button {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--secondery-Font);
+    background-color: var(--primary-color);
+    font-style: italic;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.SepereteText span {
+    font-size: 16px;
+    font-family: var(--secondery-Font);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.Card h4 {
+    font-size: 20px;
+    font-family: var(--Primary-Font);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+/* Styling Looking for custom beats? the section */
+#CustomBeats {
+    min-height: 50vh;
+    width: 100%;
+    background-color: #2C0105;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0px;
+}
+
+#CustomBeats h1 {
+    font-family: var(--Primary-Font);
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 30px;
+}
+
+
+
+#CustomBeats p {
+    font-size: 15px;
+    padding-top: 20px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    width: 70%;
+    /* display: block; */
+    /* margin: auto;     */
+    line-height: 1.6;
+}
+
+#CustomBtn {
+    --green: rgb(236, 4, 26);
+    font-size: 20px;
+    padding: 0.7em 3em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    display: block;
+    margin: 20px auto;
+    border-radius: 0.6em;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(236, 4, 26, 0.1) 1%, transparent 40%, transparent 60%, rgba(236, 4, 26, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(236, 4, 26, 0.4), 0 0 9px 3px rgba(236, 4, 26, 0.1);
+}
+
+#CustomBtn:hover {
+    color: rgb(255, 255, 255);
+    /* Adjusted hover color */
+    box-shadow: inset 0 0 10px rgba(236, 4, 26, 0.6), 0 0 9px 3px rgba(236, 4, 26, 0.2);
+}
+
+#CustomBtn:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(236, 4, 26, 0.1) 40%, rgba(236, 4, 26, 0.1) 60%, transparent 100%);
+}
+
+#CustomBtn:hover:before {
+    transform: translateX(25em);
+}
+
+/* Styling Card Section */
+
+#CardSection {
+    min-height: 58vh;
+    width: 100%;
+    background-color: var(--secondery-color);
+    padding: 20px 0px;
+
+}
+
+#CardSection h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--Primary-Font);
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Styling Again Cards */
+
+.CardContainer-2 {
+    height: 37vh ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+}
+
+.card-2 {
+    max-height: 160px;
+    width: 32%;
+    padding: 1.5rem !important;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid var(--primary-color);
+}
+
+.card-2 p {
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+}
+
+.positionimg {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+
+}
+
+.card-2:hover .positionimg {
+    filter: hue-rotate(10%);
+}
+
+.carddata * {
+    color: #fff;
+}
+
+.carddata {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.carddata img {
+    width: 75px;
+    padding-top: 10px;
+}
+
+.card-2:hover {
+    background-color: #000;
+    box-shadow: 0 0 5px var(--primary-color), 0 0 20px var(--primary-color), 0 0 50px var(--primary-color),
+        0 0 100px var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Styling Section About Zeyah Real */
+#AboutZR {
+    height: 80vh;
+    width: 100%;
+    background: url(/img/About\ Bg.png) no-repeat center center / cover;
+    background-attachment: fixed;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding: 60px 0px;
+    flex-direction: column;
+}
+
+#AboutZR * {
+    color: #fff;
+}
+
+#AboutZR img {
+    width: 200px;
+}
+
+#AboutZR hr {
+    height: 3px;
+    width: 20%;
+    background-color: var(--primary-color);
+    border: none;
+
+}
+
+#AboutZR h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#AboutZR p {
+    font-family: 14px;
+    text-align: center;
+    font-weight: 500;
+    width: 80%;
+    font-style: italic;
+
+}
+
+#footer {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text span,
+a {
+    font-size: 14px;
+    color: var(--secondery-color);
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--secondery-Font);
+}
+
+.socail--icons {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    width: 50%;
+}
+
+.socail--icons i {
+    font-size: 20px;
+    color: var(--secondery-color);
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.socail--icons i:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.fa-bars,.fa-xmark{
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none !important;
+    transition: all 0.3s cubic-bezier(1, 0, 0, 1);
+}
+.dropdown_menu{
+    height: 100vh;
+    width: 300px;
+    background-color: #000000ab;
+    position: absolute;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: self-start;
+    right: -2.3rem;
+    overflow: hidden;
+    top: 2rem;
+    border-radius: 15px;
+    padding: 10px;
+    transition: height ease-in-out 0.5s;
+}
+.dropdown_menu li{
+    list-style: none;
+    padding: 1.5px 20px;
+}
+.dropdown_menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--Primary-Font);
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+.dropdown_menu a:hover {
+    color: var(--primary-color);
+}
+
+.dropdown_menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease-in-out;
+}
+
+.dropdown_menu a:hover::after {
+    width: 100%;
+}
+
+.hello{
+    height: 0px;
+    padding: 0px;
+    transition: all  ease-in-out 0.5s;
+
+}
+
+
+@media(max-width: 925px){
+    .hide{
+        display: none;
+    }
+    .fa-bars,.fa-xmark{
+        display: block !important;
+    }
+}
+
+
+@media (max-width: 750px) {
+    #Home {
+        justify-content: center;
+        align-items: center;
+    }
+    #Home h1{
+        text-align: center !important;
+        font-size: 65px;
+    }
+    #Home p{
+        width: 80%;
+        text-align: center;
+        font-size: 20px;
+    }
+    #CustomBeats p{
+        width: 92%;
+        padding-top: 0px;
+    }
+
+    .CardContainer-2{
+        flex-direction: column;
+        height: 70vh;
+    }
+    .card-2{
+        width: 80%;
+    }
+    #AboutZR{
+        height: 100vh;
+    }
+
+    #AboutZR p{
+        font-size: 14px;
+        width: 90%;
+
+    }
+    #AboutZR h1{
+        font-size: 40px;
+    }
+}
